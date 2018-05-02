@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Jiangtao | 一个Python简单项目框架的建立流程</title>
+    <meta name="description" content="一个Python简单项目框架的建立流程">
+    <link rel="icon" href="/favicon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <meta name="msapplication-TileImage" content="/favicon.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/32.styles.ae2a5d82.css" as="style"><link rel="preload" href="/assets/js/app.e696bce2.js" as="script"><link rel="preload" href="/assets/js/6.b4c01ab8.js" as="script"><link rel="prefetch" href="/assets/js/17.e088e6d8.js"><link rel="prefetch" href="/assets/js/1.a131cca7.js"><link rel="prefetch" href="/assets/js/2.5a3a489a.js"><link rel="prefetch" href="/assets/js/3.f94624e5.js"><link rel="prefetch" href="/assets/js/4.105c84c9.js"><link rel="prefetch" href="/assets/js/5.fdc45de8.js"><link rel="prefetch" href="/assets/js/7.4b4f012b.js"><link rel="prefetch" href="/assets/js/8.657c8685.js"><link rel="prefetch" href="/assets/js/9.7090f9f6.js"><link rel="prefetch" href="/assets/js/10.381db102.js"><link rel="prefetch" href="/assets/js/11.9735f823.js"><link rel="prefetch" href="/assets/js/12.18c3251a.js"><link rel="prefetch" href="/assets/js/13.92a0d42a.js"><link rel="prefetch" href="/assets/js/14.d084bfc4.js"><link rel="prefetch" href="/assets/js/15.de91c232.js"><link rel="prefetch" href="/assets/js/16.3fc25d77.js"><link rel="prefetch" href="/assets/js/0.47f13a47.js"><link rel="prefetch" href="/assets/js/18.a3d5488e.js"><link rel="prefetch" href="/assets/js/19.fabe7fac.js"><link rel="prefetch" href="/assets/js/20.269c0bf0.js"><link rel="prefetch" href="/assets/js/21.ffa2cbc3.js"><link rel="prefetch" href="/assets/js/22.fd396da8.js"><link rel="prefetch" href="/assets/js/23.fdc35ed0.js"><link rel="prefetch" href="/assets/js/24.e4ca18e0.js"><link rel="prefetch" href="/assets/js/25.160f84d6.js"><link rel="prefetch" href="/assets/js/26.10d3a9fd.js"><link rel="prefetch" href="/assets/js/27.7f86c586.js"><link rel="prefetch" href="/assets/js/28.70c6dc3f.js"><link rel="prefetch" href="/assets/js/29.311fefcb.js"><link rel="prefetch" href="/assets/js/30.9ea39dbc.js"><link rel="prefetch" href="/assets/js/31.68b6a0b6.js">
+    <link rel="stylesheet" href="/assets/css/32.styles.ae2a5d82.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      Jiangtao
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/post/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/about.html" class="nav-link">About</a></div><div class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/post/Python/2017-01-19-一个Python简单项目框架的建立流程.html" class="nav-link router-link-exact-active router-link-active">English</a></li><li class="dropdown-item"><!----><a href="/zh/" class="nav-link">简体中文</a></li></ul></div></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/post/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/about.html" class="nav-link">About</a></div><div class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/post/Python/2017-01-19-一个Python简单项目框架的建立流程.html" class="nav-link router-link-exact-active router-link-active">English</a></li><li class="dropdown-item"><!----><a href="/zh/" class="nav-link">简体中文</a></li></ul></div></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>API</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Frontend</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Git</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Linux</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Mac</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>MySQL</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Nginx</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Python</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/post/Python/2017-01-19-一个Python简单项目框架的建立流程.html" class="active sidebar-link">一个Python简单项目框架的建立流程</a></li><li><a href="/post/Python/2017-11-24-Python项目生成requirements_txt.html" class="sidebar-link">Python项目生成requirements</a></li><li><a href="/post/Python/2017-12-14-Python实现定时任务初步探索.html" class="sidebar-link">Python实现定时任务的初步探索</a></li><li><a href="/post/Python/2018-01-23-Python项目架构的思考.html" class="sidebar-link">Python项目架构的思考</a></li><li><a href="/post/Python/2018-04-09-Python-Tornado后台服务器跨域设置示例.html" class="sidebar-link">Python-Tornado服务器后台跨域设置示例</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>TensorFlow</span><span class="arrow right"></span></p><!----></div></li></ul></div><div class="page"><div class="content"><h2 id="一个python简单项目框架的建立流程"><a href="#一个python简单项目框架的建立流程" aria-hidden="true" class="header-anchor">#</a> 一个Python简单项目框架的建立流程</h2><ol><li><p>创建一个文件夹，给这个文件夹命名，然后在这个文件夹里分别创建下面的文件和目录，文件和目录里面的内容可以先不管，先搭起项目结构。<br></p><ul><li>文件application.py: 这个文件的核心任务是完成tornado.web.Application()的实例化</li><li>文件URL.py: 这个文件中记录项目中所有URL和映射的类，即完成前面代码中handlers=[...]的功能</li><li>文件server.py: 这是项目的入口文件，里面包含if <strong>name</strong> == &quot;<strong>main</strong>&quot;, 从这里启动项目和服务</li><li>目录handlers: 存放.py文件，即所谓各种请求类（如果你是更大一些的项目，可能还要分配给别的目录来存储这种文件）</li><li>目录optsql（或者是database）: 存放操作数据库的文件，比如各种读取数据或者写入数据库的类或函数，都放在这里面的某些文件中</li><li>目录static: 存放静态文件，比如CSS, JS, 图片等，为了更清晰，在这个目录里面，还可以建立子目录，比如css，js，img等子目录，分别对应各种类型的文件</li><li>目录template: 存放.html的模板（在更大的项目中，可能会设计多个目录来存放不同的模板，或者在里面再有子目录进行区分）<br></li></ul></li><li><p>application.py代码一般如下：</p></li></ol><pre class="language-python"><code>  <span class="token comment">#!/usr/bin/env python</span>
+  <span class="token comment">#coding:utf-8</span>
+  <span class="token keyword">from</span> url <span class="token keyword">import</span> url
+  <span class="token keyword">import</span> tornado<span class="token punctuation">.</span>web
+  <span class="token keyword">import</span> os
+
+  setting <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span>
+      template_path<span class="token operator">=</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>dirname<span class="token punctuation">(</span>__file__<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;template&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      static_path<span class="token operator">=</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>dirname<span class="token punctuation">(</span>__file__<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;static&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">)</span>
+
+  application <span class="token operator">=</span> tornado<span class="token punctuation">.</span>web<span class="token punctuation">.</span>Application<span class="token punctuation">(</span>
+      handlers<span class="token operator">=</span>url<span class="token punctuation">,</span>
+      <span class="token operator">**</span>setting
+      <span class="token punctuation">)</span>
+</code></pre><ol start="3"><li>url.py文件内容：</li></ol><pre class="language-python"><code>  <span class="token comment">#!/usr/bin/env python</span>
+  <span class="token comment">#coding:utf-8</span>
+  <span class="token keyword">import</span> sys
+  <span class="token builtin">reload</span><span class="token punctuation">(</span>sys<span class="token punctuation">)</span>
+  sys<span class="token punctuation">.</span>setdefaultencoding<span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+  <span class="token keyword">from</span> handler<span class="token punctuation">.</span>index <span class="token keyword">import</span> IndexHandler
+
+  url<span class="token operator">=</span><span class="token punctuation">[</span>
+      <span class="token punctuation">(</span>r<span class="token string">'/'</span><span class="token punctuation">,</span> IndexHandler<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span>
+</code></pre><ol start="4"><li>server.py文件内容:</li></ol><pre class="language-python"><code>  <span class="token comment">#!/usr/bin/env python</span>
+  <span class="token comment">#coding:utf-8</span>
+  <span class="token keyword">import</span> tornado<span class="token punctuation">.</span>ioloop
+  <span class="token keyword">import</span> tornado<span class="token punctuation">.</span>options
+  <span class="token keyword">import</span> tornado<span class="token punctuation">.</span>httpserver
+  <span class="token keyword">import</span> sys
+  <span class="token keyword">from</span> application <span class="token keyword">import</span> application
+  <span class="token keyword">from</span> tornado<span class="token punctuation">.</span>options <span class="token keyword">import</span> define<span class="token punctuation">,</span>options
+
+  define<span class="token punctuation">(</span><span class="token string">&quot;port&quot;</span><span class="token punctuation">,</span>default<span class="token operator">=</span><span class="token number">8888</span><span class="token punctuation">,</span><span class="token builtin">help</span><span class="token operator">=</span><span class="token string">&quot;run on th given port&quot;</span><span class="token punctuation">,</span><span class="token builtin">type</span><span class="token operator">=</span><span class="token builtin">int</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+      tornado<span class="token punctuation">.</span>options<span class="token punctuation">.</span>parse_command_line<span class="token punctuation">(</span><span class="token punctuation">)</span>
+      http_server <span class="token operator">=</span> tornado<span class="token punctuation">.</span>httpserver<span class="token punctuation">.</span>HTTPServer<span class="token punctuation">(</span>application<span class="token punctuation">)</span>
+      http_server<span class="token punctuation">.</span>listen<span class="token punctuation">(</span>options<span class="token punctuation">.</span>port<span class="token punctuation">)</span>
+      <span class="token keyword">print</span> <span class="token string">'Development server is running at http://127.0.0.1:%s/'</span> <span class="token operator">%</span> options<span class="token punctuation">.</span>port
+      <span class="token keyword">print</span> <span class="token string">'Quit the server with Control-C'</span> tornado<span class="token punctuation">.</span>ioloop<span class="token punctuation">.</span>IOLoop<span class="token punctuation">.</span>instance<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">if</span> __name__<span class="token operator">==</span><span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+      main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><ol start="5"><li><p>接下来就看目录，首先在static/css/里面建立一个style.css的文件，并写样式表。</p></li><li><p>样式表定义好，就是template/index.html了，比如说Jinja2样式的。</p></li><li><p>目录handlers里面是放index.py文件，这个文件里面是请求响应的类IndexHandler</p></li></ol><pre class="language-python"><code>  <span class="token comment">#!/usr/bin/env python</span>
+  <span class="token comment">#coding:utf-8</span>
+  <span class="token keyword">import</span> tornado<span class="token punctuation">.</span>web
+  <span class="token keyword">import</span> sys
+  <span class="token builtin">reload</span><span class="token punctuation">(</span>sys<span class="token punctuation">)</span>
+  sys<span class="token punctuation">.</span>setdefaultencoding<span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">class</span> <span class="token class-name">IndexHandler</span><span class="token punctuation">(</span>tornado<span class="token punctuation">.</span>web<span class="token punctuation">.</span>RequestHandler<span class="token punctuation">)</span><span class="token punctuation">:</span>
+      <span class="token keyword">def</span> <span class="token function">get</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+          lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;python&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;www.itdiffer.com&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;qiwsir@gmail.com&quot;</span><span class="token punctuation">]</span>
+          self<span class="token punctuation">.</span>render<span class="token punctuation">(</span><span class="token string">&quot;index.html&quot;</span><span class="token punctuation">,</span> info<span class="token operator">=</span>lst<span class="token punctuation">)</span>
+</code></pre><ol start="8"><li>说明：</li></ol><pre class="language-text"><code>设置为utf-8的配置，目的是避免汉字乱码。
+很需要说明的是，由于这个文件在handler目录里面，要在上一层的url.py中引用（看url.py内容）,必须要在本目录中建立一个名称是&quot;__init__.py&quot;的空文件
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/post/Nginx/2018-03-24-Nginx之location配置.html" class="prev">
+          Nginx之location配置
+        </a></span><span class="next"><a href="/post/Python/2017-11-24-Python项目生成requirements_txt.html">
+          Python项目生成requirements
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/6.b4c01ab8.js" defer></script><script src="/assets/js/app.e696bce2.js" defer></script>
+  </body>
+</html>

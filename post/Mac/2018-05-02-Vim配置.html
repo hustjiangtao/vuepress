@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Jiangtao | Vim配置</title>
+    <meta name="description" content="Vim配置">
+    <link rel="icon" href="/favicon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <meta name="msapplication-TileImage" content="/favicon.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/32.styles.ae2a5d82.css" as="style"><link rel="preload" href="/assets/js/app.e696bce2.js" as="script"><link rel="preload" href="/assets/js/9.7090f9f6.js" as="script"><link rel="prefetch" href="/assets/js/17.e088e6d8.js"><link rel="prefetch" href="/assets/js/1.a131cca7.js"><link rel="prefetch" href="/assets/js/2.5a3a489a.js"><link rel="prefetch" href="/assets/js/3.f94624e5.js"><link rel="prefetch" href="/assets/js/4.105c84c9.js"><link rel="prefetch" href="/assets/js/5.fdc45de8.js"><link rel="prefetch" href="/assets/js/6.b4c01ab8.js"><link rel="prefetch" href="/assets/js/7.4b4f012b.js"><link rel="prefetch" href="/assets/js/8.657c8685.js"><link rel="prefetch" href="/assets/js/10.381db102.js"><link rel="prefetch" href="/assets/js/11.9735f823.js"><link rel="prefetch" href="/assets/js/12.18c3251a.js"><link rel="prefetch" href="/assets/js/13.92a0d42a.js"><link rel="prefetch" href="/assets/js/14.d084bfc4.js"><link rel="prefetch" href="/assets/js/15.de91c232.js"><link rel="prefetch" href="/assets/js/16.3fc25d77.js"><link rel="prefetch" href="/assets/js/0.47f13a47.js"><link rel="prefetch" href="/assets/js/18.a3d5488e.js"><link rel="prefetch" href="/assets/js/19.fabe7fac.js"><link rel="prefetch" href="/assets/js/20.269c0bf0.js"><link rel="prefetch" href="/assets/js/21.ffa2cbc3.js"><link rel="prefetch" href="/assets/js/22.fd396da8.js"><link rel="prefetch" href="/assets/js/23.fdc35ed0.js"><link rel="prefetch" href="/assets/js/24.e4ca18e0.js"><link rel="prefetch" href="/assets/js/25.160f84d6.js"><link rel="prefetch" href="/assets/js/26.10d3a9fd.js"><link rel="prefetch" href="/assets/js/27.7f86c586.js"><link rel="prefetch" href="/assets/js/28.70c6dc3f.js"><link rel="prefetch" href="/assets/js/29.311fefcb.js"><link rel="prefetch" href="/assets/js/30.9ea39dbc.js"><link rel="prefetch" href="/assets/js/31.68b6a0b6.js">
+    <link rel="stylesheet" href="/assets/css/32.styles.ae2a5d82.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      Jiangtao
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/post/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/about.html" class="nav-link">About</a></div><div class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/post/Mac/2018-05-02-Vim配置.html" class="nav-link router-link-exact-active router-link-active">English</a></li><li class="dropdown-item"><!----><a href="/zh/" class="nav-link">简体中文</a></li></ul></div></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/post/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/about.html" class="nav-link">About</a></div><div class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/post/Mac/2018-05-02-Vim配置.html" class="nav-link router-link-exact-active router-link-active">English</a></li><li class="dropdown-item"><!----><a href="/zh/" class="nav-link">简体中文</a></li></ul></div></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>API</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Frontend</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Git</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Linux</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Mac</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/post/Mac/2018-02-05-Mac安装Python开发环境依赖.html" class="sidebar-link">Mac安装Python开发环境依赖</a></li><li><a href="/post/Mac/2018-02-17-Mac下homebrew安装mysql.html" class="sidebar-link">Mac下Homebrew安装MySQL</a></li><li><a href="/post/Mac/2018-03-19-Mac软件清单.html" class="sidebar-link">Mac软件清单</a></li><li><a href="/post/Mac/2018-04-23-Mac下zsh终端使用sublime打开文件及文件夹的设置.html" class="sidebar-link">Mac下zsh终端使用sublime打开文件及文件夹的设置</a></li><li><a href="/post/Mac/2018-05-02-Vim配置.html" class="active sidebar-link">Vim配置</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>MySQL</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Nginx</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Python</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>TensorFlow</span><span class="arrow right"></span></p><!----></div></li></ul></div><div class="page"><div class="content"><h1 id="vim配置"><a href="#vim配置" aria-hidden="true" class="header-anchor">#</a> Vim配置</h1><h2 id="安装-vim-包管理工具-vundle"><a href="#安装-vim-包管理工具-vundle" aria-hidden="true" class="header-anchor">#</a> 安装 Vim 包管理工具 Vundle</h2><p>Vim 的 Vundle 之于相当于 Python 的 pip</p><pre class="language-bash"><code>$ <span class="token function">git</span> clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+</code></pre><h2 id="配置"><a href="#配置" aria-hidden="true" class="header-anchor">#</a> 配置</h2><ul><li>创建 Vim 配置文件</li></ul><pre class="language-bash"><code>$ <span class="token function">touch</span> ~/.vimrc
+$ vim ~/.vimrc
+</code></pre><p>添加如下内容：</p><pre class="language-text"><code>set nocompatible              &quot; required
+filetype off                  &quot; required
+
+&quot; set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+&quot; alternatively, pass a path where Vundle should install plugins
+&quot;call vundle#begin('~/some/path/here')
+
+&quot; let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'vim-scripts/indentpython.vim'
+
+Plugin 'jnurmine/Zenburn'
+
+&quot; supporting super-search using ctrl + p
+Plugin 'kien/ctrlp.vim'
+
+&quot; Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
+
+
+&quot; All of your Plugins must be added before the following line
+call vundle#end()            &quot; required
+filetype plugin indent on    &quot; required
+
+&quot; setting for normal user
+
+&quot; supporting for utf-8
+set encoding=utf-8
+
+&quot; enalbe num_line
+set nu
+
+&quot; clipbord from none-vim
+set clipboard=unnamed
+
+set splitbelow
+set splitright
+
+&quot; supporting for python pep8
+au BufNewFile,BufRead *.py
+  \ set tabstop=4
+  \ set softtabstop=4
+  \ set shiftwidth=4
+  \ set textwidth=79
+  \ set expandtab
+  \ set autoindent
+  \ set fileformat=unix
+au BufNewFile,BufRead *.js,*.html,*.css
+  \ set tabstop=2
+  \ set softtabstop=2
+  \ set shiftwidth=2
+
+let python_highlight_all=1
+syntax on
+
+</code></pre><h2 id="reference"><a href="#reference" aria-hidden="true" class="header-anchor">#</a> Reference</h2><ul><li><a href="http://codingpy.com/article/vim-and-python-match-in-heaven/" target="_blank" rel="noopener noreferrer">Vim与Python真乃天作之合</a></li><li><a href="https://www.cnblogs.com/cjy15639731813/p/5886158.html" target="_blank" rel="noopener noreferrer">Vim配置（python版）</a></li></ul></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/post/Mac/2018-04-23-Mac下zsh终端使用sublime打开文件及文件夹的设置.html" class="prev">
+          Mac下zsh终端使用sublime打开文件及文件夹的设置
+        </a></span><span class="next"><a href="/post/MySQL/2018-04-19-MySQL优化.html">
+          MySQL优化
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/9.7090f9f6.js" defer></script><script src="/assets/js/app.e696bce2.js" defer></script>
+  </body>
+</html>
